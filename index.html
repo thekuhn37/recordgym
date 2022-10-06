@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Record-Gym</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./ICONS/body/7531258_home_workout_application_training_technology_icon.svg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Workout</a></li>
+                    <li><a href="">Record</a></li>
+                    <li><a href="">Recommend</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+            <img src="./ICONS/4781852_burger_line_list_menu_nav_icon.svg" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Record-Gym <br>Check Your Progress Everyday</h2>
+                <h3>Record, Remind, Recommend Your Workout Path</h3>
+                <p>(Normal/Premium)</p>
+                <h4>$20.00/Month</h4>
+                <button type="button">Register Now<img src="./ICONS/211621_c_right_arrow_icon.svg" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="./ICONS/body/7531265_chest_muscle_anatomy_training_bodybuilding_icon.svg" alt="chest" class="chest">
+                <div class="color-box"></div>
+                <div class="schedule">
+                    <img src="./ICONS/6791279_calender_date_deadline_event_schedule_icon.svg" alt="" class="schedule">
+                    <p><small>Schedule workout</small></p>    
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="./ICONS/5282541_fb_social media_facebook_facebook logo_social network_icon.svg" alt="">
+            <img src="./ICONS/7693325_tiktok_social media_logo_apps_icon.svg" alt="">
+            <img src="./ICONS/1161953_instagram_icon.svg" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight="130px"
+            }
+            else{
+                menuList.style.maxHeight = "0px" 
+            }
+        }
+    </script>
+
+</body>
+</html>
